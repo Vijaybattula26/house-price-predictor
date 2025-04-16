@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House Price Predictor</title>
+</head>
+<body>
+    <h2>Enter House Details</h2>
+    <form action="/predict" method="post">
+        <label>Longitude</label><br>
+        <input type="text" name="longitude"><br>
+
+        <label>Latitude</label><br>
+        <input type="text" name="latitude"><br>
+
+        <label>Median Age</label><br>
+        <input type="text" name="housing_median_age"><br>
+
+        <label>Total Rooms</label><br>
+        <input type="text" name="total_rooms"><br>
+
+        <label>Total Bedrooms</label><br>
+        <input type="text" name="total_bedrooms"><br>
+
+        <label>Population</label><br>
+        <input type="text" name="population"><br>
+
+        <label>Households</label><br>
+        <input type="text" name="households"><br>
+
+        <label>Median Income</label><br>
+        <input type="text" name="median_income"><br>
+
+        <label>Ocean Proximity</label><br>
+        <select name="ocean_proximity">
+            <option value="NEAR BAY">NEAR BAY</option>
+            <option value="NEAR OCEAN">NEAR OCEAN</option>
+            <option value="INLAND">INLAND</option>
+            <option value="ISLAND">ISLAND</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>

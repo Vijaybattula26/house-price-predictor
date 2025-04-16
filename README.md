@@ -51,7 +51,16 @@ house-price-app/
 │   └── index.html          # Frontend HTML
 └── README.md
 
+Reqirements.txt
+
 flask
 scikit-learn
 numpy
+
+🙌 Connect with Me
+🔗 LinkedIn: Vijay Battula
+💻 LeetCode: leetcode.com/u/vijaybattula26
+📷 Instagram: @vijay_98857
+🐙 GitHub: Vijaybattula26
+
 
